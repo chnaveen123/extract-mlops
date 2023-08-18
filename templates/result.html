@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+  </style>
+  <h2 style="margin-left: 460px;">Details About Uploaded Document</h2>
+  <body>
+    <img src="../static/images/{{filename}}" alt="{{document_type}}" width="500" height="300" style="margin-left: 400px;">
+    <br>
+    <br>
+    <table style="width: 80%;height:100%;margin-left:130px">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+        {% for i,j in result.items() %}
+        <tr>
+          <td>{{i}}</td>
+          <td>{{j}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>

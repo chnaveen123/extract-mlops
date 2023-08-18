@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Upload</title>
+</head>
+<body>
+  <h1>Document Upload</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="documents">Choose document type:</label>
+
+    <select id="documents" name="document_type">
+      <option value="PAN">PAN</option>
+      <option value="Aadhar">Aadhar</option>
+      <option value="DL">Driver License</option>
+      <option value="VoterId" selected>Voter Id</option>
+    </select>
+    <br>
+    <br>
+    <input type="file" name="document">
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
